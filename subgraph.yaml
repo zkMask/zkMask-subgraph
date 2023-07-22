@@ -6,7 +6,7 @@ dataSources:
     name: ZkMask
     network: goerli
     source:
-      address: "0xcaA36A9fc3256c70D066A3b8a89A5DfeAC0C2c93"
+      address: "0x6187EBe7d3D7fe033E3EA060b15a26fBe157fE01"
       abi: ZkMask
       startBlock: 9389052
     mapping:
