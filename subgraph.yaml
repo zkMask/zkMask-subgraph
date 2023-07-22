@@ -20,8 +20,8 @@ dataSources:
         - name: ZkMask
           file: ./abis/ZkMask.json
       eventHandlers:
-        - event: AuthenticationCompleted(bool,address)
+        - event: AuthenticationCompleted(bool,indexed address,indexed uint256,address,uint256,bytes4,uint256,uint256)
           handler: handleAuthenticationCompleted
-        - event: InitiateAuthentication(address)
+        - event: InitiateAuthentication(indexed uint256,indexed address,indexed bytes4,uint256,uint256)
           handler: handleInitiateAuthentication
       file: ./src/zk-mask.ts

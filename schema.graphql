@@ -1,16 +1,22 @@
-type AuthenticationCompleted @entity(immutable: true) {
+type AuthenticationCompleted @entity {
   id: Bytes!
   success: Boolean! # bool
   user: Bytes! # address
-  blockNumber: BigInt!
-  blockTimestamp: BigInt!
+  txId: BigInt!
+  contract: Bytes!
+  value: BigInt!
+  methodId: Bytes!
+  txBlockNumber: BigInt!
+  txTimestamp: BigInt!
   transactionHash: Bytes!
 }
 
-type InitiateAuthentication @entity(immutable: true) {
+type InitiateAuthentication @entity {
   id: Bytes!
   user: Bytes! # address
-  blockNumber: BigInt!
-  blockTimestamp: BigInt!
+  txId: BigInt!
+  methodId: Bytes!
+  txBlockNumber: BigInt!
+  txTimestamp: BigInt!
   transactionHash: Bytes!
 }
