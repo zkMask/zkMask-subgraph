@@ -1,0 +1,27 @@
+specVersion: 0.0.5
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: ZkMask
+    network: goerli
+    source:
+      address: "0xcaA36A9fc3256c70D066A3b8a89A5DfeAC0C2c93"
+      abi: ZkMask
+      startBlock: 9389052
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - AuthenticationCompleted
+        - InitiateAuthentication
+      abis:
+        - name: ZkMask
+          file: ./abis/ZkMask.json
+      eventHandlers:
+        - event: AuthenticationCompleted(bool,address)
+          handler: handleAuthenticationCompleted
+        - event: InitiateAuthentication(address)
+          handler: handleInitiateAuthentication
+      file: ./src/zk-mask.ts

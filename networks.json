@@ -1,0 +1,8 @@
+{
+  "goerli": {
+    "ZkMask": {
+      "address": "0xcaA36A9fc3256c70D066A3b8a89A5DfeAC0C2c93",
+      "startBlock": 9389052
+    }
+  }
+}
