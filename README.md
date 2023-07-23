@@ -1,5 +1,7 @@
 # zkMask-subgraph
 
+The subgraph is used to enable push notifications for the user and show him the history of his authentications. 
+
 Goerli deployment: [https://thegraph.com/hosted-service/subgraph/richa-iitr/zkmask](https://thegraph.com/hosted-service/subgraph/richa-iitr/zkmask)  <br>
 
 Query Structure <br>
